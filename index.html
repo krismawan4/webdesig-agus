@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/nav.css" />
     </head>
-    <body>
+    <body style="overflow-x: hidden">
         <!-- Header -->
         <header id="header">
             <!-- Navigasi -->
@@ -16,11 +16,11 @@
                     <h4>Agus Prayogo</h4>
                 </div>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">Poduct</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#layanan">Service</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#aside">About</a></li>
                 </ul>
 
                 <div class="menu-toggle">
@@ -97,7 +97,7 @@
                 </div>
             </aside>
         </main>
-        <main class="container" style="background-image: url('asset/img7.jpg')">
+        <main class="container" style="background-image: url('asset/img7.jpg')" id="layanan">
             <div class="layanan satu">
                 <h4>Card 1</h4>
                 <p>doloremque. Quos ea deserunt corrupti architecto aut illo sit ab unde. Ut est laborum natus.</p>
@@ -111,7 +111,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis id quas dolore quos natus</p>
             </div>
         </main>
-        <main class="container">
+        <main class="container" id="gallery">
             <div class="thumbnail-gallery">
                 <img src="asset/img1.jpg" />
             </div>
@@ -136,5 +136,6 @@
         <footer id="footer">&copy; Copyright 2020 HTML.am</footer>
 
         <script src="js/script.js"></script>
+        `
     </body>
 </html>
