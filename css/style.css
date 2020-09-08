@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+header {
+    max-width: 1200px;
+    display: flex;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 5px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    /* border: solid 1px; */
+    flex: 2;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.aside {
+    /* border: solid 1px; */
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    /* border: 1px solid; */
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu {
+    background-color: rgb(226, 198, 43);
+}
+.layanan.dua {
+    background-color: rgb(43, 137, 226);
+}
+.layanan.tiga {
+    background-color: rgb(49, 226, 43);
+}
+
+.thumbnail-gallery {
+    width: 100%;
+}
+
+.thumbnail-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail-gallery {
+        width: 30%;
+    }
+}
+
+@media (min-width: 800px) {
+    .thumbnail-gallery {
+        width: 25%;
+    }
+}
