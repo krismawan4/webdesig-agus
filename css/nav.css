@@ -1,0 +1,123 @@
+nav {
+    display: flex;
+    background-color: rgb(238, 130, 238);
+    /* padding: 20px 0; */
+    justify-content: space-around;
+    color: rgb(231, 111, 231);
+    height: 50px;
+    align-items: center;
+    z-index: 3;
+}
+
+nav .logo {
+    font-family: fantasy;
+    letter-spacing: 3px;
+    color: rgb(87, 7, 87);
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(87, 7, 87);
+    z-index: 3;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 221, 250);
+    z-index: 3;
+}
+
+/* hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    opacity: 0;
+    left: -15px;
+    top: -5px;
+    z-index: 4;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(87, 7, 87);
+    border-radius: 3px;
+    transition: all 1s;
+    z-index: 3;
+}
+
+/* hamburger menu animasion */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* tablet */
+@media screen and (max-width: 760px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        /* display: none; */
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 65%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(238, 130, 238);
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+}

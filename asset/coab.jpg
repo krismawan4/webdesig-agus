@@ -1,0 +1,29 @@
+<main class="container">
+            <div class="card">
+                <div class="header">
+                    <img src="asset/img3.jpg" />
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit</p>
+                    <button>Click!</button>
+                </div>
+            </div>
+            <div class="card besar">
+                <div class="header">
+                    <img src="asset/img5.jpg" />
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit</p>
+                    <button>Click!</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="asset/img6.jpg" />
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit</p>
+                    <button>Click!</button>
+                </div>
+            </div>
+        </main>
